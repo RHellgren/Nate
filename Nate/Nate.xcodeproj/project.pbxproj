@@ -12,7 +12,40 @@
 		B15C310424EC7F80003A2548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C310224EC7F80003A2548 /* Main.storyboard */; };
 		B15C310624EC7F8C003A2548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15C310524EC7F8C003A2548 /* Assets.xcassets */; };
 		B15C310924EC7F8C003A2548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15C310724EC7F8C003A2548 /* LaunchScreen.storyboard */; };
+		B173BF0E24EDA61600F657B1 /* Insomnia.h in Headers */ = {isa = PBXBuildFile; fileRef = B173BF0C24EDA61600F657B1 /* Insomnia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B173BF1124EDA61600F657B1 /* Insomnia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B173BF0A24EDA61600F657B1 /* Insomnia.framework */; };
+		B173BF1224EDA61600F657B1 /* Insomnia.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B173BF0A24EDA61600F657B1 /* Insomnia.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B173BF1824EDA69700F657B1 /* InsomniaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF1724EDA69700F657B1 /* InsomniaAPI.swift */; };
+		B173BF1A24EDA73700F657B1 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF1924EDA73700F657B1 /* HTTPStatusCode.swift */; };
+		B173BF1C24EDA7AF00F657B1 /* InsomniaAPI+Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF1B24EDA7AF00F657B1 /* InsomniaAPI+Endpoints.swift */; };
+		B173BF2024EDA93A00F657B1 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF1E24EDA84800F657B1 /* Products.swift */; };
+		B173BF2324EDB0D400F657B1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF2224EDB0D400F657B1 /* DataService.swift */; };
+		B173BF2624EDBD7900F657B1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF2524EDBD7900F657B1 /* Product.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B173BF0F24EDA61600F657B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15C30F124EC7F80003A2548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B173BF0924EDA61600F657B1;
+			remoteInfo = Insomnia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B173BF1624EDA61600F657B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B173BF1224EDA61600F657B1 /* Insomnia.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B15C30F924EC7F80003A2548 /* Nate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +55,27 @@
 		B15C310524EC7F8C003A2548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B15C310824EC7F8C003A2548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B15C310A24EC7F8C003A2548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B173BF0A24EDA61600F657B1 /* Insomnia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Insomnia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B173BF0C24EDA61600F657B1 /* Insomnia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Insomnia.h; sourceTree = "<group>"; };
+		B173BF0D24EDA61600F657B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B173BF1724EDA69700F657B1 /* InsomniaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsomniaAPI.swift; sourceTree = "<group>"; };
+		B173BF1924EDA73700F657B1 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		B173BF1B24EDA7AF00F657B1 /* InsomniaAPI+Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InsomniaAPI+Endpoints.swift"; sourceTree = "<group>"; };
+		B173BF1E24EDA84800F657B1 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		B173BF2224EDB0D400F657B1 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B173BF2524EDBD7900F657B1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B15C30F624EC7F80003A2548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B173BF1124EDA61600F657B1 /* Insomnia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B173BF0724EDA61600F657B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B15C30FB24EC7F80003A2548 /* Nate */,
+				B173BF0B24EDA61600F657B1 /* Insomnia */,
 				B15C30FA24EC7F80003A2548 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B15C30F924EC7F80003A2548 /* Nate.app */,
+				B173BF0A24EDA61600F657B1 /* Insomnia.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +109,9 @@
 				B15C30FC24EC7F80003A2548 /* AppDelegate.swift */,
 				B15C310024EC7F80003A2548 /* ViewController.swift */,
 				B15C310224EC7F80003A2548 /* Main.storyboard */,
+				B173BF2424EDBD5700F657B1 /* Models */,
+				B173BF2124EDB0C400F657B1 /* Shared */,
+				B173BF0324EDA5AD00F657B1 /* API */,
 				B15C310524EC7F8C003A2548 /* Assets.xcassets */,
 				B15C310724EC7F8C003A2548 /* LaunchScreen.storyboard */,
 				B15C310A24EC7F8C003A2548 /* Info.plist */,
@@ -64,7 +119,62 @@
 			path = Nate;
 			sourceTree = "<group>";
 		};
+		B173BF0324EDA5AD00F657B1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B173BF1D24EDA7BF00F657B1 /* Response objects */,
+				B173BF1724EDA69700F657B1 /* InsomniaAPI.swift */,
+				B173BF1B24EDA7AF00F657B1 /* InsomniaAPI+Endpoints.swift */,
+				B173BF1924EDA73700F657B1 /* HTTPStatusCode.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B173BF0B24EDA61600F657B1 /* Insomnia */ = {
+			isa = PBXGroup;
+			children = (
+				B173BF0C24EDA61600F657B1 /* Insomnia.h */,
+				B173BF0D24EDA61600F657B1 /* Info.plist */,
+			);
+			path = Insomnia;
+			sourceTree = "<group>";
+		};
+		B173BF1D24EDA7BF00F657B1 /* Response objects */ = {
+			isa = PBXGroup;
+			children = (
+				B173BF1E24EDA84800F657B1 /* Products.swift */,
+			);
+			path = "Response objects";
+			sourceTree = "<group>";
+		};
+		B173BF2124EDB0C400F657B1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B173BF2224EDB0D400F657B1 /* DataService.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B173BF2424EDBD5700F657B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B173BF2524EDBD7900F657B1 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B173BF0524EDA61600F657B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B173BF0E24EDA61600F657B1 /* Insomnia.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B15C30F824EC7F80003A2548 /* Nate */ = {
@@ -74,15 +184,35 @@
 				B15C30F524EC7F80003A2548 /* Sources */,
 				B15C30F624EC7F80003A2548 /* Frameworks */,
 				B15C30F724EC7F80003A2548 /* Resources */,
+				B173BF1624EDA61600F657B1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B173BF1024EDA61600F657B1 /* PBXTargetDependency */,
 			);
 			name = Nate;
 			productName = Nate;
 			productReference = B15C30F924EC7F80003A2548 /* Nate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B173BF0924EDA61600F657B1 /* Insomnia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B173BF1324EDA61600F657B1 /* Build configuration list for PBXNativeTarget "Insomnia" */;
+			buildPhases = (
+				B173BF0524EDA61600F657B1 /* Headers */,
+				B173BF0624EDA61600F657B1 /* Sources */,
+				B173BF0724EDA61600F657B1 /* Frameworks */,
+				B173BF0824EDA61600F657B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Insomnia;
+			productName = Insomnia;
+			productReference = B173BF0A24EDA61600F657B1 /* Insomnia.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +226,10 @@
 				TargetAttributes = {
 					B15C30F824EC7F80003A2548 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					B173BF0924EDA61600F657B1 = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -113,6 +247,7 @@
 			projectRoot = "";
 			targets = (
 				B15C30F824EC7F80003A2548 /* Nate */,
+				B173BF0924EDA61600F657B1 /* Insomnia */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +263,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B173BF0824EDA61600F657B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,12 +277,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B173BF2324EDB0D400F657B1 /* DataService.swift in Sources */,
+				B173BF2624EDBD7900F657B1 /* Product.swift in Sources */,
 				B15C310124EC7F80003A2548 /* ViewController.swift in Sources */,
 				B15C30FD24EC7F80003A2548 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B173BF0624EDA61600F657B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B173BF1C24EDA7AF00F657B1 /* InsomniaAPI+Endpoints.swift in Sources */,
+				B173BF2024EDA93A00F657B1 /* Products.swift in Sources */,
+				B173BF1A24EDA73700F657B1 /* HTTPStatusCode.swift in Sources */,
+				B173BF1824EDA69700F657B1 /* InsomniaAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B173BF1024EDA61600F657B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B173BF0924EDA61600F657B1 /* Insomnia */;
+			targetProxy = B173BF0F24EDA61600F657B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B15C310224EC7F80003A2548 /* Main.storyboard */ = {
@@ -279,6 +442,7 @@
 		B15C310E24EC7F8C003A2548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XAS9CJDMWX;
@@ -298,6 +462,7 @@
 		B15C310F24EC7F8C003A2548 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XAS9CJDMWX;
@@ -311,6 +476,67 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B173BF1424EDA61600F657B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Insomnia/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RHellgren.Insomnia;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B173BF1524EDA61600F657B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Insomnia/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RHellgren.Insomnia;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -331,6 +557,15 @@
 			buildConfigurations = (
 				B15C310E24EC7F8C003A2548 /* Debug */,
 				B15C310F24EC7F8C003A2548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B173BF1324EDA61600F657B1 /* Build configuration list for PBXNativeTarget "Insomnia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B173BF1424EDA61600F657B1 /* Debug */,
+				B173BF1524EDA61600F657B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
