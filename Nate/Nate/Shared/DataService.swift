@@ -9,7 +9,7 @@
 import Foundation
 import Insomnia
 
-class DataService {
+final class DataService {
     private let api = Insomnia.InsomniaAPI()
 
     func getProducts(offset: Int?, completion: @escaping ([Product]) -> Void) {
