@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class ProductListTableViewCell: UITableViewCell {
 
@@ -30,7 +31,20 @@ final class ProductListTableViewCell: UITableViewCell {
     func configure(viewModel: ProductListTableViewCellViewModel) {
         titleLabel.text = viewModel.title
         merchantLabel.text = "Merchant: \(viewModel.merchant)"
-        // TODO: Add image from URL
+
+        if let url = viewModel.imageURL {
+            productImageView.kf.indicatorType = .activity
+            productImageView.kf.setImage(
+                with: url,
+                placeholder: UIImage(named: "ProductImagePlaceholder"),
+                options: [
+                    .scaleFactor(UIScreen.main.scale),
+                    .transition(.fade(1)),
+                    .cacheOriginalImage
+                ])
+        } else {
+            productImageView.image = UIImage(named: "ProductImageMissing")
+        }
     }
 }
 
