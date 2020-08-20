@@ -17,6 +17,7 @@ final class ProductListTableViewController: UITableViewController {
 
         tableView.register(ProductListTableViewCell.self)
         tableView.separatorStyle = .none
+        tableView.delegate = self
 
         viewModel.delegate = self
         viewModel.fetchNewReleases()
@@ -40,6 +41,19 @@ final class ProductListTableViewController: UITableViewController {
         }
 
         return cell
+    }
+
+    // MARK: - UITableViewDataDelegate
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let viewModel = viewModel.productDetailViewModel(for: indexPath.row) else {
+            return
+        }
+
+        let viewController: ProductDetailViewController = ProductDetailViewController.instantiate()
+        viewController.viewModel = viewModel
+
+        present(viewController, animated: true)
     }
 }
 

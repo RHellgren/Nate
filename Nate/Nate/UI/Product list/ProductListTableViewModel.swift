@@ -35,4 +35,17 @@ final class ProductListTableViewModel {
                                                  merchant: product.merchant,
                                                  imageURL: product.images.first)
     }
+
+    func productDetailViewModel(for index: Int) -> ProductDetailViewModel? {
+        guard products.indices.contains(index) else {
+            return nil
+        }
+
+        let product = products[index]
+
+        return ProductDetailViewModel(imageURLs: product.images,
+                                      title: product.title,
+                                      merchant: product.merchant,
+                                      link: product.url)
+    }
 }
