@@ -12,6 +12,7 @@ class ProductDetailViewController: UIViewController {
 
     @IBOutlet private var closeButton: UIButton!
     @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var marchantLabelContainer: UIView!
     @IBOutlet private var merchantLabel: UILabel!
     @IBOutlet private var showButton: UIButton!
 
@@ -41,8 +42,12 @@ class ProductDetailViewController: UIViewController {
         titleLabel.text = "\(viewModel.title) \(viewModel.title)"
         titleLabel.textColor = UIColor.primaryText
 
-        merchantLabel.text = "Sold by merchant: \(viewModel.merchant)"
-        merchantLabel.textColor = UIColor.secondaryText
+        if viewModel.merchant.count > 0 {
+            merchantLabel.text = "Sold by merchant: \(viewModel.merchant)"
+            merchantLabel.textColor = UIColor.secondaryText
+        } else {
+            marchantLabelContainer.isHidden = true
+        }
 
         showButton.backgroundColor = UIColor.primaryInteractionBackground
         showButton.setTitleColor(UIColor.primaryInteractionText, for: .normal)
