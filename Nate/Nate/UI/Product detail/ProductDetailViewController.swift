@@ -30,7 +30,7 @@ class ProductDetailViewController: UIViewController {
         }
     }
 
-    func updateUI() {
+    private func updateUI() {
         guard let viewModel = viewModel else {
             return
         }
@@ -49,6 +49,16 @@ class ProductDetailViewController: UIViewController {
             marchantLabelContainer.isHidden = true
         }
 
+        updateShowButton()
+    }
+
+    private func updateShowButton() {
+        guard let url = viewModel?.link,
+            UIApplication.shared.canOpenURL(url) else {
+                showButton.isHidden = true
+                return
+        }
+
         showButton.backgroundColor = UIColor.primaryInteractionBackground
         showButton.setTitleColor(UIColor.primaryInteractionText, for: .normal)
         showButton.layer.cornerRadius = 8
@@ -63,7 +73,7 @@ class ProductDetailViewController: UIViewController {
     }
 
     @IBAction func didPressShow(_ sender: Any) {
-        guard let url = viewModel?.link, !url.absoluteString.isEmpty else {
+        guard let url = viewModel?.link else {
            return
         }
 
