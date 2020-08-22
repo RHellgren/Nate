@@ -33,6 +33,7 @@
 		B173BF4324EEFCF900F657B1 /* ProductDetailImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF4224EEFCF900F657B1 /* ProductDetailImageCollectionViewController.swift */; };
 		B173BF4524EF007D00F657B1 /* ProductDetailImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF4424EF007D00F657B1 /* ProductDetailImageCollectionViewCell.swift */; };
 		B173BF4724EF009400F657B1 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF4624EF009400F657B1 /* UICollectionView+Extensions.swift */; };
+		B173BF4A24F1311F00F657B1 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF4924F1311F00F657B1 /* UIColor+Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		B173BF4224EEFCF900F657B1 /* ProductDetailImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailImageCollectionViewController.swift; sourceTree = "<group>"; };
 		B173BF4424EF007D00F657B1 /* ProductDetailImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		B173BF4624EF009400F657B1 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		B173BF4924F1311F00F657B1 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +135,10 @@
 				B15C30FC24EC7F80003A2548 /* AppDelegate.swift */,
 				B173BF2724EEDBF300F657B1 /* UI */,
 				B173BF2424EDBD5700F657B1 /* Models */,
+				B173BF4824F1310200F657B1 /* Theme */,
 				B173BF2124EDB0C400F657B1 /* Shared */,
 				B173BF3024EEDF4A00F657B1 /* Extensions */,
 				B173BF0324EDA5AD00F657B1 /* API */,
-				B15C310524EC7F8C003A2548 /* Assets.xcassets */,
 				B15C310724EC7F8C003A2548 /* LaunchScreen.storyboard */,
 				B15C310A24EC7F8C003A2548 /* Info.plist */,
 			);
@@ -228,6 +230,15 @@
 				B173BF4424EF007D00F657B1 /* ProductDetailImageCollectionViewCell.swift */,
 			);
 			path = "Product detail";
+			sourceTree = "<group>";
+		};
+		B173BF4824F1310200F657B1 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B15C310524EC7F8C003A2548 /* Assets.xcassets */,
+				B173BF4924F1311F00F657B1 /* UIColor+Theme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +368,7 @@
 				B173BF3224EEDF6300F657B1 /* UITableView+Extensions.swift in Sources */,
 				B173BF3F24EEFA7600F657B1 /* UIViewController+Extensions.swift in Sources */,
 				B173BF2324EDB0D400F657B1 /* DataService.swift in Sources */,
+				B173BF4A24F1311F00F657B1 /* UIColor+Theme.swift in Sources */,
 				B173BF2624EDBD7900F657B1 /* Product.swift in Sources */,
 				B15C30FD24EC7F80003A2548 /* AppDelegate.swift in Sources */,
 				B173BF3B24EEF93800F657B1 /* ProductDetailViewController.swift in Sources */,

@@ -22,10 +22,17 @@ final class ProductListTableViewCell: UITableViewCell {
         selectionStyle = .none
 
         innerView.layer.cornerRadius = 8
-        innerView.layer.shadowColor = UIColor.black.cgColor
-        innerView.layer.shadowOpacity = 0.1
+        innerView.layer.shadowColor = UIColor.shadow.cgColor
         innerView.layer.shadowOffset = .zero
         innerView.layer.shadowRadius = 8
+        innerView.layer.shadowOpacity = 0.1
+        innerView.backgroundColor = UIColor.secondaryBackground
+
+        productImageView.layer.cornerRadius = 8
+        productImageView.contentMode = .scaleAspectFill
+
+        titleLabel.textColor = UIColor.primaryText
+        merchantLabel.textColor = UIColor.secondaryText
     }
 
     func configure(viewModel: ProductListTableViewCellViewModel) {

@@ -34,8 +34,23 @@ class ProductDetailViewController: UIViewController {
             return
         }
 
-        titleLabel.text = viewModel.title
+        view.backgroundColor = UIColor.primaryBackground
+
+        closeButton.setTitleColor(UIColor.secondaryInteractionText, for: .normal)
+
+        titleLabel.text = "\(viewModel.title) \(viewModel.title)"
+        titleLabel.textColor = UIColor.primaryText
+
         merchantLabel.text = "Sold by merchant: \(viewModel.merchant)"
+        merchantLabel.textColor = UIColor.secondaryText
+
+        showButton.backgroundColor = UIColor.primaryInteractionBackground
+        showButton.setTitleColor(UIColor.primaryInteractionText, for: .normal)
+        showButton.layer.cornerRadius = 8
+        showButton.layer.shadowColor = UIColor.shadow.cgColor
+        showButton.layer.shadowOffset = .zero
+        showButton.layer.shadowRadius = 8
+        showButton.layer.shadowOpacity = 0.3
     }
 
     @IBAction func didPressClose(_ sender: Any) {
@@ -43,8 +58,10 @@ class ProductDetailViewController: UIViewController {
     }
 
     @IBAction func didPressShow(_ sender: Any) {
-        if let url = viewModel?.link {
-            UIApplication.shared.openURL(url)
+        guard let url = viewModel?.link, !url.absoluteString.isEmpty else {
+           return
         }
+
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }

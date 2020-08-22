@@ -18,6 +18,7 @@ final class ProductListTableViewController: UITableViewController {
         tableView.register(ProductListTableViewCell.self)
         tableView.separatorStyle = .none
         tableView.delegate = self
+        tableView.backgroundColor = UIColor.primaryBackground
 
         viewModel.delegate = self
         viewModel.fetchNewReleases()
