@@ -29,7 +29,6 @@ final class ProductDetailImageCollectionViewController: UICollectionViewControll
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(imageURLs.count)
         return imageURLs.count
     }
 
