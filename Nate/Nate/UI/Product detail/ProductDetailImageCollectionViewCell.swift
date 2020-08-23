@@ -15,11 +15,14 @@ class ProductDetailImageCollectionViewCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.isUserInteractionEnabled = false
         imageView.contentMode = .scaleAspectFit
+        imageView.backgroundColor = .clear
         return imageView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+
+        backgroundColor = .clear
 
         contentView.addSubview(imageView)
         NSLayoutConstraint.activate([

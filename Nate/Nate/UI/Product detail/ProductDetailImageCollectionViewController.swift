@@ -16,7 +16,8 @@ final class ProductDetailImageCollectionViewController: UICollectionViewControll
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        collectionView.backgroundColor = .clear
         collectionView.register(ProductDetailImageCollectionViewCell.self)
         collectionView.delegate = self
     }
