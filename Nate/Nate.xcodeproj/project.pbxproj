@@ -34,6 +34,10 @@
 		B173BF4524EF007D00F657B1 /* ProductDetailImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF4424EF007D00F657B1 /* ProductDetailImageCollectionViewCell.swift */; };
 		B173BF4724EF009400F657B1 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF4624EF009400F657B1 /* UICollectionView+Extensions.swift */; };
 		B173BF4A24F1311F00F657B1 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF4924F1311F00F657B1 /* UIColor+Theme.swift */; };
+		B173BF5224F142AD00F657B1 /* NateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF5124F142AD00F657B1 /* NateTests.swift */; };
+		B173BF5A24F1497100F657B1 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF5924F1497100F657B1 /* URLSessionDataTaskMock.swift */; };
+		B173BF5D24F1499600F657B1 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BF5C24F1499600F657B1 /* URLSessionMock.swift */; };
+		B173BF5F24F14AC800F657B1 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = B173BF5E24F14AC800F657B1 /* Products.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B173BF0924EDA61600F657B1;
 			remoteInfo = Insomnia;
+		};
+		B173BF5424F142AD00F657B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15C30F124EC7F80003A2548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B15C30F824EC7F80003A2548;
+			remoteInfo = Nate;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -89,6 +100,12 @@
 		B173BF4424EF007D00F657B1 /* ProductDetailImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		B173BF4624EF009400F657B1 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		B173BF4924F1311F00F657B1 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		B173BF4F24F142AD00F657B1 /* NateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B173BF5124F142AD00F657B1 /* NateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NateTests.swift; sourceTree = "<group>"; };
+		B173BF5324F142AD00F657B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B173BF5924F1497100F657B1 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
+		B173BF5C24F1499600F657B1 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		B173BF5E24F14AC800F657B1 /* Products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +125,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B173BF4C24F142AD00F657B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -116,6 +140,7 @@
 			children = (
 				B15C30FB24EC7F80003A2548 /* Nate */,
 				B173BF0B24EDA61600F657B1 /* Insomnia */,
+				B173BF5024F142AD00F657B1 /* NateTests */,
 				B15C30FA24EC7F80003A2548 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +150,7 @@
 			children = (
 				B15C30F924EC7F80003A2548 /* Nate.app */,
 				B173BF0A24EDA61600F657B1 /* Insomnia.framework */,
+				B173BF4F24F142AD00F657B1 /* NateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +267,26 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
+		B173BF5024F142AD00F657B1 /* NateTests */ = {
+			isa = PBXGroup;
+			children = (
+				B173BF5B24F1497D00F657B1 /* Mock */,
+				B173BF5124F142AD00F657B1 /* NateTests.swift */,
+				B173BF5324F142AD00F657B1 /* Info.plist */,
+			);
+			path = NateTests;
+			sourceTree = "<group>";
+		};
+		B173BF5B24F1497D00F657B1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B173BF5924F1497100F657B1 /* URLSessionDataTaskMock.swift */,
+				B173BF5C24F1499600F657B1 /* URLSessionMock.swift */,
+				B173BF5E24F14AC800F657B1 /* Products.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -295,6 +341,24 @@
 			productReference = B173BF0A24EDA61600F657B1 /* Insomnia.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B173BF4E24F142AD00F657B1 /* NateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B173BF5824F142AD00F657B1 /* Build configuration list for PBXNativeTarget "NateTests" */;
+			buildPhases = (
+				B173BF4B24F142AD00F657B1 /* Sources */,
+				B173BF4C24F142AD00F657B1 /* Frameworks */,
+				B173BF4D24F142AD00F657B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B173BF5524F142AD00F657B1 /* PBXTargetDependency */,
+			);
+			name = NateTests;
+			productName = NateTests;
+			productReference = B173BF4F24F142AD00F657B1 /* NateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -311,6 +375,10 @@
 					B173BF0924EDA61600F657B1 = {
 						CreatedOnToolsVersion = 11.6;
 						LastSwiftMigration = 1160;
+					};
+					B173BF4E24F142AD00F657B1 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = B15C30F824EC7F80003A2548;
 					};
 				};
 			};
@@ -332,6 +400,7 @@
 			targets = (
 				B15C30F824EC7F80003A2548 /* Nate */,
 				B173BF0924EDA61600F657B1 /* Insomnia */,
+				B173BF4E24F142AD00F657B1 /* NateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,6 +422,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B173BF4D24F142AD00F657B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B173BF5F24F14AC800F657B1 /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +468,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B173BF4B24F142AD00F657B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B173BF5D24F1499600F657B1 /* URLSessionMock.swift in Sources */,
+				B173BF5224F142AD00F657B1 /* NateTests.swift in Sources */,
+				B173BF5A24F1497100F657B1 /* URLSessionDataTaskMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -398,6 +485,11 @@
 			isa = PBXTargetDependency;
 			target = B173BF0924EDA61600F657B1 /* Insomnia */;
 			targetProxy = B173BF0F24EDA61600F657B1 /* PBXContainerItemProxy */;
+		};
+		B173BF5524F142AD00F657B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B15C30F824EC7F80003A2548 /* Nate */;
+			targetProxy = B173BF5424F142AD00F657B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -636,6 +728,46 @@
 			};
 			name = Release;
 		};
+		B173BF5624F142AD00F657B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XAS9CJDMWX;
+				INFOPLIST_FILE = NateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RHellgren.NateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nate.app/Nate";
+			};
+			name = Debug;
+		};
+		B173BF5724F142AD00F657B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XAS9CJDMWX;
+				INFOPLIST_FILE = NateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RHellgren.NateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nate.app/Nate";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -662,6 +794,15 @@
 			buildConfigurations = (
 				B173BF1424EDA61600F657B1 /* Debug */,
 				B173BF1524EDA61600F657B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B173BF5824F142AD00F657B1 /* Build configuration list for PBXNativeTarget "NateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B173BF5624F142AD00F657B1 /* Debug */,
+				B173BF5724F142AD00F657B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -23,12 +23,18 @@ enum HTTPMethod: String {
 
 public class InsomniaAPI {
 
-    public init() { }
+    private let session: URLSession
 
-    private var decoder: JSONDecoder {
+    public init(session: URLSession = .shared) {
+        self.session = session
+    }
+    
+    public var decoder: JSONDecoder {
         let decoder = JSONDecoder()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dateFormatter.locale = Locale(identifier: "en_GB")
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
         decoder.dateDecodingStrategy = .formatted(dateFormatter)
         return decoder
     }
@@ -72,7 +78,6 @@ public class InsomniaAPI {
 
     internal func perform<T: Codable>(_ request: URLRequest, completion: @escaping (Result<T, APIError>) -> ()) {
 
-        let session = URLSession(configuration: .default)
         let dataTask = session.dataTask(with: request) { data, response, error in
 
             if let error = error {

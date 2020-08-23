@@ -10,7 +10,11 @@ import Foundation
 import Insomnia
 
 final class DataService {
-    private let api = Insomnia.InsomniaAPI()
+    private let api: InsomniaAPI!
+
+    public init(api: InsomniaAPI = Insomnia.InsomniaAPI()) {
+        self.api = api
+    }
 
     func getProducts(offset: Int?, completion: @escaping ([Product]) -> Void) {
         api.getProducts(offset: offset ?? 0) { apiProducts in
