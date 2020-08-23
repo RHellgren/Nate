@@ -64,10 +64,6 @@ final class ProductListTableViewController: UITableViewController {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
 
-        print("offsetY: \(offsetY)")
-        print("contentHeight: \(contentHeight)")
-        print("scrollView.frame.height: \(scrollView.frame.height)")
-
         if (offsetY > contentHeight - (2 * scrollView.frame.height)) && !isLoading {
             loadMoreData()
         }
