@@ -52,7 +52,6 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="hEw-ei-ePg" secondAttribute="bottom" id="H8H-Pn-ouR"/>
                                                             <constraint firstItem="hEw-ei-ePg" firstAttribute="top" secondItem="klt-bs-qFx" secondAttribute="top" id="L5l-3z-iJ9"/>
@@ -70,7 +69,6 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstItem="auR-gD-MOE" firstAttribute="top" secondItem="qAy-lD-oqD" secondAttribute="top" id="4aY-aP-NTk"/>
                                                             <constraint firstAttribute="bottom" secondItem="auR-gD-MOE" secondAttribute="bottom" constant="15" id="FRk-9r-krh"/>
@@ -99,7 +97,6 @@
                                         <viewLayoutGuide key="frameLayoutGuide" id="qey-Gq-W4h"/>
                                     </scrollView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="FW7-Xu-E5a" secondAttribute="bottom" id="4JB-TI-Adu"/>
                                     <constraint firstItem="FW7-Xu-E5a" firstAttribute="top" secondItem="03r-6v-DGZ" secondAttribute="top" id="G2t-k1-hzs"/>
@@ -155,7 +152,6 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="0fx-sk-zFq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ycw-LF-rkQ">
                             <size key="itemSize" width="244" height="140"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
