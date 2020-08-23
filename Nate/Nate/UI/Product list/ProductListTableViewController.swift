@@ -11,6 +11,7 @@ import UIKit
 final class ProductListTableViewController: UITableViewController {
 
     var viewModel = ProductListTableViewModel()
+    private var isLoading = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,10 +57,33 @@ final class ProductListTableViewController: UITableViewController {
 
         present(viewController, animated: true)
     }
+
+    // MARK: - UITableView infinite scroll
+
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+
+        print("offsetY: \(offsetY)")
+        print("contentHeight: \(contentHeight)")
+        print("scrollView.frame.height: \(scrollView.frame.height)")
+
+        if (offsetY > contentHeight - (2 * scrollView.frame.height)) && !isLoading {
+            loadMoreData()
+        }
+    }
+
+    func loadMoreData() {
+        if !self.isLoading {
+            self.isLoading = true
+            viewModel.fetchNewReleases()
+        }
+    }
 }
 
 extension ProductListTableViewController: ProductListTableViewModelDelegate {
     func onFetchCompleted() {
         tableView.reloadData()
+        isLoading = false
     }
 }

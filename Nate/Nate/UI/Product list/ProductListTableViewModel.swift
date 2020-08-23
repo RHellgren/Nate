@@ -15,10 +15,20 @@ protocol ProductListTableViewModelDelegate {
 final class ProductListTableViewModel {
     var products: [Product] = []
     var delegate: ProductListTableViewModelDelegate?
+    private var isFetchInProgress = false
     private var currentPage = 0
 
     func fetchNewReleases() {
+        guard !isFetchInProgress else {
+          return
+        }
+
+        isFetchInProgress = true
+
         DataService().getProducts(offset: currentPage) { products in
+            self.isFetchInProgress = false
+            self.currentPage += 1
+
             self.products.append(contentsOf: products)
             self.delegate?.onFetchCompleted()
         }
