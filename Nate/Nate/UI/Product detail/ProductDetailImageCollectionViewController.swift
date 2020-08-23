@@ -30,12 +30,18 @@ final class ProductDetailImageCollectionViewController: UICollectionViewControll
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageURLs.count
+        return imageURLs.count > 0 ? imageURLs.count : 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: ProductDetailImageCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
-        cell.configure(imageURL: imageURLs[indexPath.row])
+
+        if imageURLs.indices.contains(indexPath.row) {
+            cell.configure(imageURL: imageURLs[indexPath.row])
+        } else {
+            cell.configureWithPlaceholder()
+        }
+        
         return cell
     }
 

@@ -48,4 +48,8 @@ class ProductDetailImageCollectionViewCell: UICollectionViewCell {
                 .cacheOriginalImage
             ])
     }
+
+    func configureWithPlaceholder() {
+        imageView.image = UIImage(named: "ProductImageMissing")
+    }
 }
